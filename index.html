@@ -1,41 +1,293 @@
-<div id='g-hyperlinkfinalpresentation-box' class='ai2html'>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-	<style type='text/css' media='screen,print'>
-		.g-artboard {
-			margin:0 auto;
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js One Page Scroll Sites</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+
+	<style>
+
+		/* Sections
+		 * --------------------------------------- */
+		#section0 h1 {
+			font-family: San Francisco Text;
+			font-size:170px;
+			font-weight: light;
+			color:#08E700;
 		}
+		#section0 p {
+			font-family: San Francisco Text;
+			font-size:50px;
+			font-weight: lighter;
+			 color: #00ff00;
+			 padding-top:10px;
+		}
+
+		#section0 p1 {padding-top:50px;
+			padding-bottom:50px;
+			font-family: San Francisco Text;
+			font-size:20px;
+			color:white;
+
+		}
+		#slide0 img{
+			margin: 20px 0 0 0;
+			position: absolute;
+			top: 0;
+			left: 19.5%;
+		}
+		#slide1 img{
+			margin: 20px 0 0 0;
+			position: absolute;
+			top: 0;
+			left: 52.5%%;
+		}
+		#slide2 img{
+			margin: 20px 0 0 0;
+			position: absolute;
+			top: 0;
+			left: 85.5%;
+		}
+		#slide3 img{
+			margin: 20px 0 0 0;
+			position: absolute;
+			top: 0;
+			left: 90.5%;
+		}
+		#section2 img{
+			margin: 20px 0 0 0;
+			position: absolute;
+			top: 0;
+			left: 58.5%;
+			z-index:9999;
+		}
+		#section3 img{
+			margin: 20px 0 0 0;
+			position: absolute;
+			top: 0;
+			left: 58.5%;
+			z-index:9999;
+		}
+		.intro{padding-bottom:500px;}
+		.intro p{
+			width: 50%;
+			margin: 0px 16%;
+			font-size: 1.8em;
+			max-width:370px;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+		li {font-family: san francisco text;
+			font-size:18px;
+			font-weight: bold;
+			}
+		.star {font-size: 20px;
+			color:#FFFF33;}
+
+		#sampleMovie1 {position:absolute;
+				left:20.65%;
+				top:142px;
+				z-index:-1;}
+	    #sampleMovie2{position:absolute;
+				left:53.65%;
+				top:142px;
+				z-index:-1;}
+		#sampleMovie3{position:absolute;
+				left:86.65%;
+				top:142px;
+				z-index:-1;}
+		#sampleMovie4{position:absolute;
+				left:61.66%;
+				top:142px;
+				z-index:9998;}
+		#sampleMovie5{position:absolute;
+				left:61.66%;
+				top:142px;
+				z-index:9998;}
+
+
 	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#5500D4', '#CEEC97', '#F4B393', '#FC60A8', '#494368'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage'],
+				menu: '#menu',
+				scrollingSpeed: 1000,slidesNavigation: true, 
+			});
+
+		});
+	</script>
+
+</head>
+<body>
 
 
-	<!-- Artboard: Artboard_1_copy -->
-	<div id='g-hyperlinkfinalpresentation-Artboard_1_copy' class='g-artboard '>
-		<style type='text/css' media='screen,print'>
-			#g-hyperlinkfinalpresentation-Artboard_1_copy{
-				position:relative;
-				overflow:hidden;
-				width:1440px;
-			}
-			.g-aiAbs{
-				position:absolute;
-			}
-			.g-aiImg{
-				display:block;
-				width:100% !important;
-			}
-			#g-hyperlinkfinalpresentation-Artboard_1_copy p{
-				font-family:nyt-franklin,arial,helvetica,sans-serif;
-				font-size:13px;
-				line-height:18px;
-				margin:0;
-			}
-		</style>
-		<div id='g-hyperlinkfinalpresentation-Artboard_1_copy-graphic'>
-			<img id='g-ai0-0'
-				class='g-aiImg'
-				src='hyperlinkfinalpresentation-Artboard_1_copy.png'
-				/>
-		</div>
+<!--<select id="demosMenu">
+  <option selected>Choose Demo</option>
+  <option id="backgrounds">Background images</option>
+  <option id="backgroundVideo">Background video</option>
+  <option id="gradientBackgrounds">Gradient backgrounds</option>
+  <option id="backgroundsFixed">Fixed fullscreen backgrounds</option>
+  <option id="looping">Looping</option>
+  <option id="noAnchor">No anchor links</option>
+  <option id="scrollingSpeed">Scrolling speed</option>
+  <option id="easing">Easing</option>
+  <option id="callbacks">Callbacks</option>
+  <option id="css3">CSS3</option>
+  <option id="continuous">Continuous scrolling</option>
+  <option id="normalScroll">Normal scrolling</option>
+  <option id="scrollBar">Scroll bar enabled</option>
+  <option id="scrolling">Scroll inside sections and slides</option>
+  <option id="navigationV">Vertical navigation dots</option>
+  <option id="navigationH">Horizontal navigation dots</option>
+  <option id="fixedHeaders">Fixed headers</option>
+  <option id="apple">Apple iPhone demo (animations)</option>
+  <option id="oneSection">One single section</option>
+  <option id="responsive">Responsive</option>
+  <option id="methods">Methods</option>
+</select>-->
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Collage</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Inputs</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Record</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Feed</a></li>
+	<li data-menuanchor="5thpage"><a href="#5thpage">About</a></li>
+</ul>
+
+
+<div id="fullpage">
+	<div class="section sectionFirst" id="section0">
+		<h1>Collage</h1>
+		<p>Express yourself Through Rapid Collage</p>
+		<p1>Quickly Drop Text, Scribbles, and Looping videos onto Your Dynamic Poster</p1>
+		
 	</div>
 
+	<div class="section" id="section1">
+		<!--<div class="star">&#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733; </div><!-->
+	    <div class="slide" id="slide0">
+			<div class="intro">
+				<h1>Video</h1>
+				<p>Instantly Record the Current Moment.<br><br>Press and hold to begin video recording.</p>
+				<img src="imgs/byron.png" height="1000px">
+				
+				<video id="sampleMovie1" width="404" height="757" preload="auto" loop autoplay>
+                <source src="imgs/FeedTest.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="imgs/FeedTest.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                <source src="imgs/FeedTest.webm" type='video/webm; codecs="vp8, vorbis"' />
+                Your browser does not support the video tag.
+            </video>
 
+
+
+			
+			</div>
+
+		</div>
+	    <div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Scribble</h1>
+				<p>Paint freely on top of the collaged canvas.<br><br>Press and hold to choose any color.</p>
+				<img src="imgs/byron.png" height="1000px">
+			<video id="sampleMovie2" width="404" height="757" preload loop autoplay="autoplay">
+                <source src="imgs/FeedTest.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="imgs/FeedTest.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                <source src="imgs/FeedTest.webm" type='video/webm; codecs="vp8, vorbis"' />
+                Your browser does not support the video tag.
+            </video>
+
+				
+
+			</div>
+		</div>
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<div class="intro">
+				<h1>Text</h1>
+				<p>Type out a message on the canvas and position freely.<br><br>Move, Scale, Color, and Choose a Typeface.</p>
+				<img src="imgs/byron.png" height="1000px">
+				<video id="sampleMovie3" width="404" height="757" preload="auto" loop autoplay>
+                <source src="imgs/FeedTest.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="imgs/FeedTest.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                <source src="imgs/FeedTest.webm" type='video/webm; codecs="vp8, vorbis"' />
+                Your browser does not support the video tag.
+            </video>
+
+			</div>
+			
+		 </div>
+	   <!--<div class="slide" id="slide3" data-anchor="slide3">
+			<div class="intro">
+				<h1>Text</h1>
+				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+				<img src="imgs/byron.png" height="1000px">
+			</div>
+		</div><!-->
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Record</h1>
+			<p>Create animated loops for all media objects.<br><br>Press Record, Drag Object, and Press again to save.</p>
+			<img src="imgs/byron.png" height="1000px">
+			<video id="sampleMovie4" preload="auto" autoplay="true" loop width="404" height="757">
+                <source src="imgs/FeedTest.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="imgs/FeedTest.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                <source src="imgs/FeedTest.webm" type='video/webm; codecs="vp8, vorbis"' />
+                Your browser does not support the video tag.
+            </video>
+
+		</div>
+	</div>
+	<div class="section " id="section3">
+		<div class="intro">
+			<h1>Feed</h1>
+			<p>
+				Get Inspiration from your friends' dynamic posters.<br><br>Swipe up to star or down to view more collages.
+			</p>
+		</div>
+		<img src="imgs/byron.png" height="1000px">
+		<video id="sampleMovie5" width="404" height="757" preload loop autoplay="autoplay">
+                <source src="imgs/FeedTest.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="imgs/FeedTest.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                <source src="imgs/FeedTest.webm" type='video/webm; codecs="vp8, vorbis"' />
+                Your browser does not support the video tag.
+            </video>
+
+	</div>
+	<div class="section sectionLast" id="section4">
+		<div class="intro">
+			<h1>About</h1>
+			<p>
+				A Project for Computer Utopia.
+			</p>
+		</div>
 </div>
+
+</body>
+</html>
